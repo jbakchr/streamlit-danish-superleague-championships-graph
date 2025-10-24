@@ -21,6 +21,6 @@ df_sorted = df.sort_values(by='Mesterskaber')
 
 
 # Create and show horizontal bar chart
-fig = px.bar(df_sorted, x='Mesterskaber', y='Klub', orientation='h', title='Flest danske Superliga fodboldmesterskaber (1991 - 2025)', range_x=[0, 16])
+fig = px.bar(df_sorted, x='Mesterskaber', y='Klub', orientation='h', title='Flest danske Superliga fodboldmesterskaber (1991 - 2025)', range_x=[0, 17])
 fig.update_layout(xaxis=dict(tick0=0, dtick=1))
 st.plotly_chart(fig)
